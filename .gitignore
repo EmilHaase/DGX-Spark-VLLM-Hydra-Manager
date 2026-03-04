@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+.env
+
+# Local App Data
+models/
+logs/
+.tiktoken_cache/
+.compiler_cache/
+
+# Sensitive Data
+.webui_secret_key
