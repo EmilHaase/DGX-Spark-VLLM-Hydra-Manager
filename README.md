@@ -1,6 +1,6 @@
 # DGX Spark VLLM Hydra Manager
 
-An automated orchestration tool and launcher built exclusively for the DGX Spark environment. This manager downloads AI models, handles complex vLLM engine orchestration, dynamically provisions VRAM, and runs a connected Open-WebUI instance—all optimized for Blackwell Native (sm121a) and PyTorch processing on UMA hardware.
+An automated orchestration tool and launcher built exclusively for the DGX Spark environment. This manager downloads AI models, handles complex vLLM engine orchestration, dynamically provisions VRAM, and runs a connected Open-WebUI instance-all optimized for Blackwell Native (sm121a) and PyTorch processing on UMA hardware.
 
 ## 🚀 Features
 
