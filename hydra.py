@@ -278,7 +278,7 @@ class HydraMenu:
         os.system("sudo fuser -k 3000/tcp > /dev/null 2>&1 || true")
         for p in range(8000, 8008):
             os.system(f"sudo fuser -k {p}/tcp > /dev/null 2>&1 || true")
-        os.system("pkill -f vllm > /dev/null 2>&1 || true")
+        os.system("pkill -f 'vllm serve' > /dev/null 2>&1 || true")
         time.sleep(1) # Ensure ports and processes are fully released
         
         print("Dropping OS caches to free UMA memory...")
@@ -344,7 +344,7 @@ class HydraMenu:
             os.system("sudo fuser -k 3000/tcp > /dev/null 2>&1 || true")
             for p in range(8000, 8008):
                 os.system(f"sudo fuser -k {p}/tcp > /dev/null 2>&1 || true")
-            os.system("pkill -f vllm > /dev/null 2>&1 || true")
-            os.system("pkill -f open-webui > /dev/null 2>&1 || true")
+            os.system("pkill -f 'vllm serve' > /dev/null 2>&1 || true")
+            os.system("pkill -f 'open-webui serve' > /dev/null 2>&1 || true")
             print("Cleanup complete. Returning to Master Menu...")
             time.sleep(1)
